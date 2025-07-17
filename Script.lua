@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("John hub", "DarkTheme")
-local Tab = Window:NewTab("ITEMS")
-local Section = Tab:NewSection("SO PODE PEGAR UMA VEZ")
+local Tab = Window:NewTab("TROLL")
+local Section = Tab:NewSection("SO PODE PEGAR UMA VEZ OS ITEMS")
 Section:NewButton("Pegar tazer", "ButtonInfo", function()
 -- Teleporte temporário com retorno após 2 segundos
 local player = game.Players.LocalPlayer
@@ -54,6 +54,16 @@ end
 print("Cacetete pego com sucesso!!")
 end)
 
+Section:NewButton("Infinite Yield", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("Infinite Yield executado com sucesso")
+end)
+
+Section:NewButton("Invisibilidade FE", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/khen791/script-khen/refs/heads/main/Fe%20Invisible.txt", true))()
+    print("Invisibilidade ativada")
+end)
+
 local Tab = Window:NewTab("TELEPORT")
 local Section = Tab:NewSection("TODOS FUNCIONANDO")
 Section:NewButton("Base segurança", "ButtonInfo", function()
@@ -72,7 +82,7 @@ end
     print("Teleportado(a) para a base segurança")
 end)
 
-Section:NewButton("Base EB", "ButtonInfo", function()
+Section:NewButton("Base MDC", "ButtonInfo", function()
 -- Teleporte com CFrame completo (posição + rotação)
 local player = game.Players.LocalPlayer
 local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
@@ -85,7 +95,7 @@ if hrp then
 		-0.996196866, 0, 0.087131381      -- rotação Z
 	)
 end
-    print("Teleportado(a) para a base EB")
+    print("Teleportado(a) para a base MDC")
 end)
 
 local Tab = Window:NewTab("OUTROS")
