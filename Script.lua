@@ -64,6 +64,32 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/khen791/script-khen/r
     print("Invisibilidade ativada")
 end)
 
+Section:NewButton("Pegar tazer 2", "ButtonInfo", function()
+-- Teleporte temporário com retorno após 2 segundos
+local player = game.Players.LocalPlayer
+local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+
+if hrp then
+	-- Salva a posição original do jogador
+	local originalCFrame = hrp.CFrame
+
+	-- Teleporta para o novo local (com rotação)
+	hrp.CFrame = CFrame.new(
+		9.60941696, 3.47241735, -274.066193,          -- posição (X, Y, Z)
+		0.211853936, 0.0179710407, -0.977136254,      -- rotação X
+		8.5358451e-08, 0.999831021, 0.0183882136,     -- rotação Y
+		0.977301598, -0.00389574864, 0.211818099      -- rotação Z
+	)
+
+	-- Aguarda 2 segundos
+	task.wait(2)
+
+	-- Teleporta de volta para onde estava
+	hrp.CFrame = originalCFrame
+end
+    print("Tazer 2 pego com sucesso!!")
+end)
+
 local Tab = Window:NewTab("TELEPORT")
 local Section = Tab:NewSection("TODOS FUNCIONANDO")
 Section:NewButton("Base segurança", "ButtonInfo", function()
