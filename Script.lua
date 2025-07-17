@@ -25,7 +25,7 @@ if hrp then
 	-- Teleporta de volta para onde estava
 	hrp.CFrame = originalCFrame
 end
-print("Tazer pego com sucesso!!)
+print("Tazer pego com sucesso!!")
 end)
 
 Section:NewButton("Pegar cacetete", "ButtonInfo", function()
@@ -51,7 +51,7 @@ if hrp then
 	-- Volta para a posição original
 	hrp.CFrame = originalCFrame
 end
-print("Cacetete pego com sucesso!!)
+print("Cacetete pego com sucesso!!")
 end)
 
 local Tab = Window:NewTab("TELEPORT")
