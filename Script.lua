@@ -69,9 +69,9 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Telekinesis
     print("Telekinesis equipado com sucesso!!")
 end)
 
-Section:NewButton("Buraco negro", "ButtonInfo", function()
+Section:NewButton("Tornado", "ButtonInfo", function()
 loadstring(game:HttpGet("https://rscripts.net/raw/super-ring-parts-v4-by-lukas_1741980981842_td0ummjymf.txt",true))()
-    print("Buraco negro ativado")
+    print("Tornado ativado")
 end)
 
 local Tab = Window:NewTab("TELEPORT")
